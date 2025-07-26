@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.1'
 gem 'mysql2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.7', '>= 6.1.7.7'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.8'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
@@ -19,12 +19,12 @@ gem 'turbolinks', '~> 5'
 
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '>= 7.0.0'
 
 # gem 'nokogiri', '~> 1.15', '>= 1.15.4'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
+gem 'jbuilder', '~> 2.12', '>= 2.12.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-gem 'bootstrap', '~>5.2.0'
+gem 'bootstrap', '~> 5.3.0'
 gem "image_processing", ">= 1.2"
 
 group :development, :test do
@@ -56,7 +56,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
+  gem 'capybara', '>= 3.37.0'
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
