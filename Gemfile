@@ -17,7 +17,7 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # gem 'activesupport', '~> 7.1', '>= 7.1.3.2'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.6.1'
 gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
 
